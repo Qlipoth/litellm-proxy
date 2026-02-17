@@ -28,7 +28,11 @@ Thumbs.db
 
 # Временные файлы
 *.tmp
+# Исключаем все bat файлы, кроме полезных скриптов
 *.bat
+!start-with-ngrok.bat
+!start-litellm.bat
+!start-ngrok.bat
 
 # Fly.io
 .fly/
