@@ -29,12 +29,12 @@ primary_region = "iad"
     port = 443
     handlers = ["tls", "http"]
 
-# Минимальные требования для litellm в продакшене: 4 CPU, 8GB RAM
-# Для разработки можно использовать меньше ресурсов
+# Бесплатные ресурсы Fly.io (shared-cpu-1x, 256MB RAM)
+# Для продакшена рекомендуется увеличить до 4 CPU и 8GB RAM
 [vm]
   cpu_kind = "shared"
-  cpus = 4
-  memory_mb = 8192
+  cpus = 1
+  memory_mb = 256
 
 [env]
   PORT = "4000"
